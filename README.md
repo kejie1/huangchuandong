@@ -60,7 +60,7 @@ console.log(person2.name) // kejie
 
 原型：任何对象(null除外)在创建的时候就会与之关联另一个对象，这个对象就是我们所说的原型，每一个对象都会从原型"继承"属性。
 
-![构造函数和实例原型的关系图](C:\Users\chuandonghuang\Desktop\笔记\前端\huangchuandong\JavaScript\image\原型图1.png)
+![构造函数和实例原型的关系图](JavaScript\prototype\image\原型图1.png)
 
 ###  __proto__(隐式原型)
 
@@ -74,7 +74,7 @@ var person = new Person(); //this.proto === Fn.prototype
 console.log(person.__proto__ === Person.prototype); // true
 ```
 
-![实例与实例原型的关系图](C:\Users\chuandonghuang\Desktop\笔记\前端\huangchuandong\JavaScript\image\原型图2.png)
+![实例与实例原型的关系图](JavaScript\prototype\image\原型图2.png)
 
 ### constructor
 
@@ -85,7 +85,7 @@ function Person() {
 console.log(Person === Person.prototype.constructor); // true
 ```
 
-![image-20230110092536124](C:\Users\chuandonghuang\AppData\Roaming\Typora\typora-user-images\image-20230110092536124.png)
+![image-20230110092536124](JavaScript\prototype\image\原型图3.png)
 
 ```js
 function Person() {
@@ -132,7 +132,7 @@ obj.name = 'kejie'
 console.log(obj.name) // kejie
 ```
 
-![image-20230110093428444](C:\Users\chuandonghuang\Desktop\笔记\前端\huangchuandong\JavaScript\image\原型图3.png)
+![image-20230110093428444](JavaScript\prototype\image\原型图3.png)
 
 ### 原型链
 
@@ -144,11 +144,11 @@ console.log(obj.name) // kejie
 Object.prototyoe.__proto__ === null
 ```
 
-![原型图4](C:\Users\chuandonghuang\Desktop\笔记\前端\huangchuandong\JavaScript\image\原型图4.png)
+![原型图4](JavaScript\prototype\image\原型图4.png)
 
 ### 内存结构图 
 
-![image-20230109180719771](C:\Users\chuandonghuang\AppData\Roaming\Typora\typora-user-images\image-20230109180719771.png)
+![image-20230109180719771](JavaScript\prototype\image\内存.png)
 
 
 
